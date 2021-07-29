@@ -30,6 +30,10 @@ li {
   background-color: green;
 }
 
+#right {
+  float: right;
+}
+
 /* background */
 body {
   background-color: #121212;
