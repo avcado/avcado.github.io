@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+/* navbar */
+#navbar-top {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3b3b3b;
+}
+
+li {
+  font-family: "JetBrains Mono";
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#mode {
+  background-color: green;
+}
+
+/* background */
+body {
+  background-color: #121212;
+}
+
+/* main info */
+#links, #main-text {
+  text-align: center;
+  font-family: "Nunito";
+  color: white;
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+/* links */
+a {
+  border-radius: 20px;
+  color: white;
+}
+
+a:hover {
+  animation-name: hoverLink;
+  animation-duration: 0.5s;
+}
+
+@keyframes hoverLink {
+  from {
+    background-color: #121212; /* #3b3b3b */
+  }
+  to {
+    background-color: #3b3b3b;
+  }
+}
