@@ -7,6 +7,7 @@ let currentMode = "NORMAL";
 window.onload = function(){
   document.getElementsByTagName("body")[0].onkeyup = (e) => {
     var ev = e || event;
+    //alert(ev.keyCode);
 
     if(currentMode == "VISUAL") {} else {
       if(ev.keyCode == 65 || ev.keyCode == 73) {
