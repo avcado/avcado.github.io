@@ -8,11 +8,13 @@ window.onload = function(){
   document.getElementsByTagName("body")[0].onkeyup = (e) => {
     var ev = e || event;
 
-    if(ev.keyCode == 65 || ev.keyCode == 73) {
-      mode.innerHTML = "INSERT";
-      mode.style.backgroundColor = "red";
-      currentMode = "INSERT";
-      spanTest.contentEditable = true;
+    if(currentMode == "VISUAL") {} else {
+      if(ev.keyCode == 65 || ev.keyCode == 73) {
+        mode.innerHTML = "INSERT";
+        mode.style.backgroundColor = "red";
+        currentMode = "INSERT";
+        spanTest.contentEditable = true;
+      }
     }
 
     // Normal mode (normal)
@@ -24,7 +26,7 @@ window.onload = function(){
     }
 
     // Special logic for visual mode
-    if(currentMode == "NORMAL"){
+    if(currentMode == "NORMAL" && (currentMode != "INSERT")){
       if(ev.keyCode == 86){
         mode.style.backgroundColor = "blue";
         mode.innerHTML = "VISUAL";
