@@ -13,7 +13,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #3b3b3b;
+  background-color: #2c3032;
 }
 
 li {
@@ -27,7 +27,7 @@ li {
 }
 
 #mode {
-  background-color: green;
+  background-color: #006600;
 }
 
 #right {
@@ -36,7 +36,7 @@ li {
 
 /* background */
 body {
-  background-color: #121212;
+  background-color: #0e0f0f;
 }
 
 /* main info */
@@ -46,7 +46,7 @@ body {
   color: white;
   padding: 16px;
   margin-bottom: 30px;
-  background-color: #121212;
+  background-color: #0e0f0f;
 }
 
 /* links */
