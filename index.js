@@ -1,7 +1,10 @@
 // Change modes
 const mode = document.getElementById("mode");
 let spanTest = document.getElementById("input-text");
+let spanDiv = document.getElementById("type");
 let currentMode = "NORMAL";
+
+console.log(spanDiv.style)
 
 // Change modes + be able to type in a span
 window.onload = function(){
@@ -15,6 +18,18 @@ window.onload = function(){
         mode.style.backgroundColor = "red";
         currentMode = "INSERT";
         spanTest.contentEditable = true;
+        // Make the nav VISIBLE once we enter insert mode
+        let spanDiv2 = document.getElementById("type");
+        spanDiv2.style.visibility = "visible";
+
+        //  Make it visible where we can type
+        let spanDiv = document.getElementById("type");
+        spanDiv.style.backgroundColor = "#2a2b2a";
+
+        /// Add padding so it doesn't look TOO ugly
+        let spanWrapperDiv = document.getElementById("type-wrapper");
+        spanWrapperDiv.style.paddingLeft = "450px";
+        spanWrapperDiv.style.paddingRight = "450px";
       }
     }
 
@@ -24,6 +39,14 @@ window.onload = function(){
       mode.style.backgroundColor = "green";
       currentMode = "NORMAL";
       spanTest.contentEditable = false;
+
+      // Hide div
+      let s2 = document.getElementById("type");
+      s2.style.visibility = "hidden";
+
+      // Set type div to normal colorscheme
+      let spanDiv = document.getElementById("type");
+      spanDiv.style.backgroundColor = "";
     }
 
     // Special logic for visual mode
